@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px 0px;
+
+  /* Background Image */
+  background-image: url('https://raw.githubusercontent.com/winverma/test/main/giphy%20(3)%20cyanlined%20infinity.webp');
+  background-size: 100% 100%; /* Stretch image to cover the entire container */
+  background-position: center; /* Center the image */
+
+  /* Gradient Background */
+  background: linear-gradient(135deg, rgba(255, 87, 34, 0.7), rgba(233, 30, 99, 0.7), rgba(33, 150, 243, 0.7), rgba(0, 188, 212, 0.7)),
+              url('https://raw.githubusercontent.com/winverma/test/main/giphy%20(3)%20cyanlined%20infinity.webp');
+  background-blend-mode: overlay;
+
+  /* Blur Effect */
+  filter: blur(8px);
+
+  /* Animation for Gradient and Color Transition */
+  animation: gradientAnimation 15s ease infinite, colorTransition 20s ease infinite;
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.7), rgba(233, 30, 99, 0.7), rgba(33, 150, 243, 0.7), rgba(0, 188, 212, 0.7)),
+                url('https://raw.githubusercontent.com/winverma/test/main/giphy%20(3)%20cyanlined%20infinity.webp');
+    background-size: 100% 100%; /* Ensure the image covers the entire area */
+  }
+  50% {
+    background: linear-gradient(225deg, rgba(255, 193, 7, 0.7), rgba(156, 39, 176, 0.7), rgba(76, 175, 80, 0.7), rgba(0, 150, 136, 0.7)),
+                url('https://raw.githubusercontent.com/winverma/test/main/giphy%20(3)%20cyanlined%20infinity.webp');
+    background-size: 100% 100%; /* Ensure the image covers the entire area */
+  }
+  100% {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.7), rgba(233, 30, 99, 0.7), rgba(33, 150, 243, 0.7), rgba(0, 188, 212, 0.7)),
+                url('https://raw.githubusercontent.com/winverma/test/main/giphy%20(3)%20cyanlined%20infinity.webp');
+    background-size: 100% 100%; /* Ensure the image covers the entire area */
+  }
+}
+
+/* Keyframes for Color Transition */
+@keyframes colorTransition {
+  0% {
+    filter: brightness(80%) saturate(120%);
+  }
+  50% {
+    filter: brightness(100%) saturate(150%);
+  }
+  100% {
+    filter: brightness(80%) saturate(120%);
+  }
+}

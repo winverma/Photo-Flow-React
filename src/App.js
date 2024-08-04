@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <div className='App'>
-      <H1>Image Gallery</H1>
+      <H1>React PhotoFlow</H1>
       <GlobalStyle />
       <ImageGallery />
     </div>
